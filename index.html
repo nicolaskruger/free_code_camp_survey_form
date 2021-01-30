@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+    <title>Code and Coffe</title>
+</head>
+<body class="Body">
+    <header class="Header">
+        <h1 class="Header__h1" id="title">
+            Code and Coffe
+        </h1>
+        <p class="Header__p" id="description">Code, coffe and anothers stuffs</p>
+    </header>
+    <main class="Main">
+        <form class="Form" id="survey-form" action="" method="post">
+            <label id="name-label" for="name" >Name:</label>
+            <input class="Input" id="name" name="name" type="text" required placeholder="write your name">
+            <label id="email-label" for="email">Email:</label>
+            <input class="Input" id="email" name="email" type="email" required placeholder="example@emal.com">
+            <label id="number-label" for="number">Age:</label>
+            <input class="Input" id="number" name="number" type="number" min="10" max="99" placeholder="16">
+            <label id="dropdown-label" for="dropdown">Choose a your favorite language:</label>
+            <select class="Input" id="dropdown" name="dropdown" id="cars">
+              <option value="Java">Java</option>
+              <option value="JavaScript">JavaScript</option>
+              <option value="C#">C#</option>
+              <option value="python">python</option>
+            </select>
+            
+            
+            <p>Favorite drink:</p>
+            <label><input id="coffe" value="coffe" name="favorite-drink" type="radio">coffe</label>
+            <label><input id="tea" value="tea"  name="favorite-drink" type="radio">tea</label>
+            <label><input id="beer" value="beer" name="favorite-drink" type="radio">beer</label>
+            
+
+            <p>Pets:</p>
+            <label for="dog"><input id="dog" value="dog" name="dog" type="checkbox">dog</label>
+            <label for="cat"><input id="cat" value="cat" name="cat" type="checkbox">cat</label>
+            <label for="bird"><input id="bird" value="bird" name="bird" type="checkbox">bird</label>
+
+            <label for="">comments</label>
+            <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+
+            <button class="Button" type="submit" id="submit"> submit </button>
+        </form>
+    </main>
+</body>
+</html>

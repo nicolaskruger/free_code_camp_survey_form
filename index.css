@@ -1,0 +1,60 @@
+:root{
+    --textColor: whitesmoke;
+    --filltePercent: 70%;
+    --bgColor: rgba(41, 33, 129, 0.8);
+}
+html{
+    filter: grayscale(var(--filltePercent));
+}
+.Body{
+    font-family: 'Roboto', sans-serif;
+    background-image: url(https://techcrunch.com/wp-content/uploads/2015/04/codecode.jpg?w=990&crop=1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: var(--textColor);
+    display: flex;
+    flex-direction: column;
+}
+.Header{
+    -webkit-text-stroke-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Header__h1{
+    background-color: var(--bgColor);
+    -webkit-text-stroke-width: 0.5px;
+}
+.Header__p{
+    font-size: 1.2em;
+    background-color: var(--bgColor);
+}
+
+.Main{
+    background-color: var(--bgColor);
+    width: 80vw;
+    align-self: center;
+    border-radius: 5px;
+}
+.Form{
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+
+}
+label, p{
+    font-size: 19px;
+}
+.Input{
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+}
+
+.Button{
+    background-color: orange;
+    border: none;
+    height: 30px;
+}
